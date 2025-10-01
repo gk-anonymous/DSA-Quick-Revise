@@ -1,0 +1,10 @@
+cou = 0
+        
+        while n>0:
+            rem =n%10
+            cou+=1
+            n=n//10
+        
+        return cou
+
+Corner case - Negative number
