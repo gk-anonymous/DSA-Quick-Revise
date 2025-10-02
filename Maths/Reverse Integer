@@ -1,0 +1,25 @@
+ INT_MIN, INT_MAX = -2**31, 2**31 - 1
+
+        if(x<0):
+            sign  = -1
+        else:
+            sign = 1
+        
+
+        rev = 0
+        
+        x= abs(x)
+        while x>0:
+            ld = x%10
+            rev = rev*10+ld
+            x = x//10
+
+        if rev <  INT_MIN or rev> INT_MAX:
+            return 0 
+
+        return rev*sign
+
+
+-----------------------------------------------
+Time complexity = 0(log x)
+space = 0(1)
