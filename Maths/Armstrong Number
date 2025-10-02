@@ -1,0 +1,11 @@
+def armstrongNumber (self, n):
+        # code here 
+        cou = 0
+        origanal = n
+        
+        while n>0:
+            ld = n%10
+            cou = cou+  ld **3 
+            n = n//10
+            
+        return cou == origanal
